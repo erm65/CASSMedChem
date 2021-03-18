@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>coxTutorial</title>
+  </head>
+  <body>
+    <h1>CYCLOXYGENASES </h1>
+    Cyclooxigenases are enzymes involved in the production of thromboxane or
+    prostaglandin from the precursor arachidonic acid.Cycloxygenases inhibitors
+    are used to relief the symptoms of inflammation and pain.
+    <p><a href="https://en.wikipedia.org/wiki/Cyclooxygenase" target="_blank">Cyclooxygenase<br>
+      </a></p>
+    <p>Or for a more focused study of the pharmacological problem<a href="https://en.wikipedia.org/wiki/Cyclooxygenase"
+        target="_blank"><br>
+      </a></p>
+    <p><a href="https://pubmed.ncbi.nlm.nih.gov/11566042/" target="_blank">&nbsp;PaperCOX1/COX2<br>
+      </a></p>
+    <p>Actually&nbsp; there are some non specific inhibitors of the COX1 and
+      COX2 enzymes but there are also some specific inhibitors of the COX2. </p>
+    <h3>COX1/COX2 inhibitors (non-specific)</h3>
+    <ul>
+      <li> Ibuprofen&nbsp;<img src="images/Ibuprofen.png" alt="Ibuprofen" title="Ibuprofen">
+        &nbsp;&nbsp; <a href="https://drive.google.com/file/d/1T6FjDlDibAv14WBqM9gWbLkIQ_bSbXYi/view?usp=sharing"
+          target="_blank"><img src="https://drive.google.com/file/d/1T6FjDlDibAv14WBqM9gWbLkIQ_bSbXYi/view?usp=sharing"
+            title="ibuprofen" style="width: 122px; height: 122px;"></a></li>
+      <li> Flurbiprofen&nbsp;&nbsp;<img src="images/Flurbiprofen.png" alt="Flurbiprofen"
+          title="Flurbiprofen">&nbsp; <img src="https://drive.google.com/file/d/1e9gdW4CRTEqdkCjmfoftlEKXeKVo6DSF/view?usp=sharing"
+          style="width: 122px; height: 122px;" title="flurbiprofen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </li>
+    </ul>
+    <h3>COX2 specific inhibitors</h3>
+    <ul>
+      <li> Celecoxib &nbsp; &nbsp;&nbsp;<img src="images/Celecoxib.png" alt="Celcoxib"
+          title="Celcoxib"> <img src="https://drive.google.com/file/d/1t5B0msHM14Z6upZM7vrjO6HRrab6snHj/view?usp=sharing"
+          style="width: 123px; height: 122px;" title="celecoxib"></li>
+      <li> Rofecoxib (that isn’t anymore in the market because have severe
+        side-effects on the hearth)</li>
+    </ul>
+    <h3>COX1 AND COX2 DIFFERENCIES</h3>
+    <p><a href="http://www.drug-design-workshop.ch/contextBioCOX.php" target="_blank">drug-design-workshopCOX</a></p>
+    <p> <em>● The problem of the specificity is due to the aminoacid 523, in
+        COX1 is a Isoleucine (ILE), in COX2 this is a Valine (VAL).</em><br>
+      <em> </em> </p>
+    <p><em>● Specificity is important because the COX1 is involved in the</em><em>
+        protection of the gastric mucosae and the blood coagulation,</em><em>while
+        COX2 is the direct responsible of pain and inflammation. So the
+        pharmacological problem is find a drug able to inhibit selectively COX2,
+        to do this we must find a drug with a high affinity for COX2 and a lower
+        affinity for COX1</em><em><br>
+      </em></p>
+    Briefly<em>:<br>
+    </em>
+    <ul>
+      <li><em>&nbsp; inhibition of COX1 -&gt;&nbsp; side effects <br>
+        </em></li>
+      <li><em>&nbsp; inhibition of COX 2 -&gt;&nbsp; therapeutic effects<br>
+        </em></li>
+    </ul>
+    <h2><em></em><em></em><em></em>GENERAL INFO ABOUT DOCKING</h2>
+    ● To do the docking between&nbsp; COX and a drug that target one or both the
+    isoforms we need:<br>
+    <p><br>
+    </p>
+    <ul>
+      <li>&nbsp;<strong>COX1 and COX2 structures in PDB format</strong>, that
+        can be searched in the RCSB PDB database (possibly human structures, for
+        COX1 the PDB code is 6Y3C, for the COX2 i advise to downolad the 5IKV,
+        that is a human COX2 bound to the Flufenamic acid that is molecule
+        similar to the Flurbiprofen, so this file can give us general
+        information about the binding site)<a href="https://www.rcsb.org/" target="_blank">
+          RCSB-PDB</a></li>
+    </ul>
+    <ul>
+      <li style="background-color: white;"><strong>Ligand structures</strong>
+        can be found in the DrugBank datbase, you can downoload the PDB from
+        DrugBank, visualize the molecule on Chimera and also save the molecule
+        in a new format by click on “Save” and then “Save as”, so you can save
+        the molecule in the more useful format for your needs (MOL2 format for
+        SwissDock, PDB format for PatchDock)<a href="https://go.drugbank.com/" target="_blank">
+          DrugBank<br>
+        </a></li>
+      <li><strong>Definition of the binding site</strong> (a file txt with the
+        amminoacids of the binding site if we want to use PatchDock; the XYZ
+        coordinates of the binding site if we use SwissDock, but this passage
+        will be explained better in the following points.</li>
+    </ul>
+    <ul>
+      <li>A software that allow to visualize, analize and eventually make some
+        modifications on the target (for example delete some portions of the
+        protein while select other regions intersting for the docking). With <a
+          href="https://www.cgl.ucsf.edu/chimera/" target="_blank">Chimera</a>
+        we can visualize the target (PDB file), the ligand (MOL2 or PDB file)
+        and the results of our docking (in PatchDock are separeted PDB files
+        while in SwissDock we can navigate through the different models thanks
+        to the WiewDock window). Some trick that can be useful to know in
+        Chimera are: "Tools/Sequence" choose a specific aa or some aminoacids on
+        the primary structure and mark the with a colour; is possible to open
+        different files at the same time and superimpose them (for example
+        open&nbsp; the docking and the crystallographic&nbsp; structure for the
+        same ligand.</li>
+    </ul>
+    <br>
+    <h3>1.PREPARATION OF THE TARGET</h3>
+    <p> We want to obtain only one chain of the enzyme (chain A) and to do this:</p>
+    <p><br>
+    </p>
+    <ul>
+      <li>&nbsp;&nbsp;&nbsp; Open your PDB file with Chimera, you can use
+        Chimera as an interface, so you can go to <em>"Fetch by ID"</em> ,
+        select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PDB and put in the box the ID
+        of the target structure (for example you can write 5IKV and Chimera give
+        you the COX2 bound to the Flufenamic Acid, another NSAID). Or if you had
+        previously downloaded the PDB file you can directly open this file (i
+        recommended this option because PDB files are not only intersting to
+        visualize but also to read as text; you can individuate the coordinates
+        of a specific atom or you can read other information on the header of
+        the file, so i advise to download these files and put them on a folder
+        for further utilities)<br>
+      </li>
+    </ul>
+    <ul>
+      <li>&nbsp;Delete all the other chains by clicking on <em>“Select”</em>,
+        than <em>“Chain”</em>, so you can select the other chains</li>
+      <li>You can also click on “Select” and go to <em>“Residues”</em> , here
+        we can select for example HOH, NAG and also the&nbsp; LIG if we have
+        downloaded a COX bound to a ligand. If you want to delete these
+        atoms/molecules after the selection we can click<em> “Actions”</em> then
+        click<em> “Atoms”</em> and then select <em>“Delete”</em>.</li>
+      <li> Than save the structure by click <em>“Save”</em> and select <em>“Save
+          as PDB”</em></li>
+    </ul>
+    <h3>2a PREPARATION OF THE BINDING SITE: SwissDock</h3>
+    <h3><a href="http://www.swissdock.ch/" target="_blank">swissdock</a> </h3>
+    <p>●<strong> SwissDock</strong>: in this software the extra parameters are
+      the X,Y,Z coordinates of the center of the binding site and also the X,Y,Z
+      sizes;<em> </em>to form a cube in which the ligand can be docked.</p>
+    <p>● To find the coordinates we can start from COX bound to a ligand: </p>
+    <ul>
+      <li>&nbsp;Click on<em> “Select”</em> and go to <em>“Residue”</em> and
+        click on LIG.&nbsp;</li>
+      <li>&nbsp;Click to<em> “Select”</em> and go to <em>“Zone” </em>and
+        select a zone of 5 Angstrom, then click on <em>“Selected atoms only”</em></li>
+      <li>&nbsp;Save the binding site by click t<em>o “Save”</em>, and then
+        select<em> “Save PDB”</em> and also click on the option <em>“save
+          selected atoms only”</em></li>
+    </ul>
+    &nbsp;● The coordinates of the ligand (possibly take in consideration an
+    atom in the center of the molecule) ca be used as the coordinates of the
+    center. To determine the size I advise to wiew the selected atoms on Chimera
+    and note down what are the aminoacids that limit the binding site, and then
+    write the coordinates of these and calculate the differences between these
+    coordinates. These calculation doesn’t need to be very precise but are
+    useful to approximate the X,Y,Z sizes.<br>
+    <br>
+    <h3>2b PREPARATION OF THE BINDING SITE-PatchDock</h3>
+    <p><a href="https://bioinfo3d.cs.tau.ac.il/PatchDock/" target="_blank">PatchDock</a></p>
+    <p><a href="https://bioinfo3d.cs.tau.ac.il/PatchDock/"><br>
+      </a></p>
+    ● We can use the PDB file of the binding site that we have made before. Then
+    read the PDB file and write down all the aminoacids’numbers. Then write a
+    txt file with the number of the aminoacid and the chain of each aminoacid
+    (obviously in this case all the aminoacids belong to chain A)
+    <p><em>example</em>: <a href="file:///C:/Users/polro/Desktop/COX2SITOLEGAME.txt"
+        target="_blank">cox2bindingsite</a></p>
+    <p>(you can use the same txt file for both COX1 and COX2 since the
+      aminoacids involved are the same)<br>
+      <a href="file:///C:/Users/polro/Desktop/COX2SITOLEGAME.txt" target="_blank"><span
+          style="color: black;"></span></a></p>
+    <p><br>
+    </p>
+    <h3>3. SUBMIT THE DOCKING </h3>
+    In target selection you can click on <em>“Choose file”/”Scegli file” </em>and
+    pick the PDB file in the SwissDock software<br>
+    In ligand selction you have to pick the file of the ligand/drug in the MOL2
+    format<br>
+    In description you have to write your e-mail and the job name (possibly
+    choose a job name that remind you with which molecule you have done the
+    docking (e.g. FluCox2 for a docking between Flurbiprofen and COX2)<br>
+    Then you can click on<em> “Show extra parameters”</em> and then:
+    <ul>
+      <li>&nbsp;select the docking type (Very fast or Accurate in base of your
+        needs)</li>
+      <li>&nbsp;the coordinates of the binding site. </li>
+    </ul>
+    So at the end you click on <em>“Start Docking” </em>and then you receive a
+    mail that the work is started correctly and when the job is completed you
+    will receive another mail with the link of your results.<br>
+    <br>
+    <br>
+    <h3>4. RESULT’S ANALYSIS</h3>
+    <br>
+    <ul>
+      <li>Remember that before the result's analysis we must know quite
+        precisely the pharmacological problem, otherwise we cannot compare the
+        data with a sort of&nbsp; "expected result" that derive from a
+        theoretical knowledge</li>
+    </ul>
+    <ul>
+      <li>&nbsp; You can visualize your results with the right button of your
+        mouse on the icone over the <em>“Launch UCSF Chimera”</em>, then you
+        select <em>“Save link”</em>, than you can open your link by using UCSF
+        Chimera.</li>
+      <li>&nbsp; When you open the link with Chimera also opens the WiewDock
+        window. On the WiewDock you can select one of&nbsp;&nbsp; the several
+        models of docking and visualize these on Chimera. So the big advantage
+        of SwissDock is the fact that through the WiewDock you can visualize
+        rapidly all the 256 model that the docking engine give us, and for each
+        of these see all the thermodynamic values (the docking score is a
+        consensous score of all these numbers)</li>
+    </ul>
+    <ul>
+      <li>You can save a Chimera session, if you go to "File" and than to "Save
+        session as" and you can save your session as a .py file that you can
+        open whenever you want (the results placed on SwissDock expire after 14
+        days so we must save them in a folder; obviously for PatchDock we
+        download a set of PDB file when we collect the result so we not need to
+        make this procedure)</li>
+    </ul>
+    <p>Example: in the following image is possible to see: in&nbsp; green the<strong>
+        <span style="color: #33cc00;">Celecoxib</span></strong>, its position
+      result from the docking, more precisely is the best pose purposed by the
+      docking engine; in red the<strong> <span style="color: red;">Flufenamic
+          Acid</span></strong><span style="color: red;"> </span>in the
+      cristallographic structure, in this way we verify that our ligand bind the
+      correct binding site. In blue, at the right, is placed the<strong> <span
+          style="color: #000099;">VAL523</span></strong> that, since is the only
+      variant on the binding pocket between COX1 and COX2, is important for the
+      selectivity of the drug.</p>
+    <h1><img src="https://drive.google.com/file/d/1HIhR32_0t5QeK5eMrReB-AK5e_ZTcV8C/view?usp=sharing"
+        title="flufenamic acid" style="width: 801px; height: 375px;"></h1>
+  </body>
+</html>
