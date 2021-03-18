@@ -12,8 +12,15 @@
           target="_blank">first attempt</a></li>
     </ul>
     <h2>Drug-target interaction</h2>
-    <p><br>
-    </p>
-    <br>
+    <h3>Drug-target concepts</h3>
+    <ul>
+      <li><a href="01_Drug-Receptor%20interaction.html" target="_blank">Introduction
+          1</a></li>
+    </ul>
+    <h3>Docking</h3>
+    <ul>
+      <li><a href="tutorial1/coxTutorial.html" target="_blank">Docking applied
+          to COX problem</a></li>
+    </ul>
   </body>
 </html>
