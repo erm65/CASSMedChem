@@ -20,17 +20,16 @@
       COX2 enzymes but there are also some specific inhibitors of the COX2. </p>
     <h3>COX1/COX2 inhibitors (non-specific)</h3>
     <ul>
-      <li> Ibuprofen&nbsp; &nbsp;&nbsp; <a href="https://drive.google.com/file/d/1T6FjDlDibAv14WBqM9gWbLkIQ_bSbXYi/view?usp=sharing"
-          target="_blank"><img src="https://drive.google.com/file/d/1T6FjDlDibAv14WBqM9gWbLkIQ_bSbXYi/view?usp=sharing"
-            title="ibuprofen" style="width: 122px; height: 122px;"></a></li>
-      <li> Flurbiprofen&nbsp;&nbsp;&nbsp; <img src="https://drive.google.com/file/d/1e9gdW4CRTEqdkCjmfoftlEKXeKVo6DSF/view?usp=sharing"
-          style="width: 122px; height: 122px;" title="flurbiprofen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </li>
+      <li> Ibuprofen&nbsp;<img src="images/Ibuprofen.png" alt="Ibuprofen" title="Ibuprofen">
+        &nbsp;&nbsp;&nbsp;</li>
+      <li> Flurbiprofen&nbsp;&nbsp;<img src="images/Flurbiprofen.png" alt="Flurbiprofen"
+          title="Flurbiprofen">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
     </ul>
     <h3>COX2 specific inhibitors</h3>
     <ul>
-      <li> Celecoxib &nbsp; &nbsp;&nbsp; <img src="https://drive.google.com/file/d/1t5B0msHM14Z6upZM7vrjO6HRrab6snHj/view?usp=sharing"
-          style="width: 123px; height: 122px;" title="celecoxib"></li>
+      <li> Celecoxib &nbsp; &nbsp;&nbsp;<img src="images/Celecoxib.png" alt="Celcoxib"
+          title="Celcoxib">&nbsp;</li>
       <li> Rofecoxib (that isn’t anymore in the market because have severe
         side-effects on the hearth)</li>
     </ul>
